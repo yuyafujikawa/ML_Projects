@@ -4,7 +4,7 @@ Data source: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challe
 
 ### This is a multi label (Multiple label/output/target) with 2 possible classes (0 or 1) for each label, hence it's a multi-label binary classification.
 
-## Future improvement - Implement a Gridsearch for this.
+## Future improvement - Run a Gridsearch for this to find the optimal parameters.
 
 Grid search for this *multilabel AND binary classification* not yet implemented due to error I am not sure of.
 GridSearchCV for multilabel (6 labels) + 2 classes FOR EACH label = multilabel and binary. since it's a binary classification with multiple output/lables/target, OVR can be deployed.
