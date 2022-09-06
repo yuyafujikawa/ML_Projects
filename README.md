@@ -7,12 +7,14 @@ Data source: https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challe
 ## Future improvement - Run a Gridsearch for this to find the optimal parameters.
 
 Grid search for this *multilabel AND binary classification* not yet implemented due to error I am not sure of.
-GridSearchCV for multilabel (6 labels) + 2 classes FOR EACH label = multilabel and binary. since it's a binary classification with multiple output/lables/target, OVR can be deployed.
+GridSearchCV for multilabel (6 labels) + 2 classes (binary) FOR EACH label. Since it's a binary classification with multiple output/lables/target, OVR can be deployed.
 
 ValueError: Invalid parameter naive_classifier for estimator Pipeline(steps=[('multinomialnb', MultinomialNB())]). Check the list of available parameters with `estimator.get_params().keys()`.
 
+```
 from sklearn.model_selection import GridSearchCV
 from sklearn.pipeline import make_pipeline, Pipeline
+```
 
 ## First attempt
 
