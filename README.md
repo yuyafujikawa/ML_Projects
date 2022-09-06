@@ -28,7 +28,7 @@ searcher.best_params_
 ``` 
 naive_classifier = OneVsRestClassifier(
      make_pipeline(naive_model)
-     *Should achieve the same thing, except using Pipeline, and not make_pipeline, the step is explicitly specified*
+     _Should achieve the same thing, except using Pipeline, and not make_pipeline, the step is explicitly specified_
      Pipeline([("multinomialnb", naive_model)])
 )
 param_grid = {'estimator__naive_classifier__alpha': [0,0.001,0.1,1,10,100]}
